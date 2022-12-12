@@ -2081,7 +2081,7 @@ function Library:CreateWindow(WindowTitle)
         Parent = TabArea;
     });
 
-    local TabContainer = Library:Create('Frame', {
+    local TabContainer = Library:Create('ScrollingFrame', {
         BackgroundColor3 = Library.MainColor;
         BorderColor3 = Library.OutlineColor;
         Position = UDim2.new(0, 8, 0, 30);
@@ -2142,7 +2142,7 @@ function Library:CreateWindow(WindowTitle)
             BackgroundColor3 = 'MainColor';
         });
 
-        local TabFrame = Library:Create('ScrollingFrame', {
+        local TabFrame = Library:Create('Frame', {
             BackgroundTransparency = 1;
             Position = UDim2.new(0, 0, 0, 0);
             Size = UDim2.new(1, 0, 1, 0);
