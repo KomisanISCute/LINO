@@ -2151,7 +2151,7 @@ function Library:CreateWindow(WindowTitle)
             Parent = TabContainer;
         });
 
-        local LeftSide = Library:Create('ScrollingFrame', { --Frame
+        local LeftSide = Library:Create('Frame', {
             BackgroundTransparency = 1;
             Position = UDim2.new(0, 8, 0, 8);
             Size = UDim2.new(0.5, -12, 0, 507);
@@ -2159,7 +2159,7 @@ function Library:CreateWindow(WindowTitle)
             Parent = TabFrame;
         });
 
-        local RightSide = Library:Create('ScrollingFrame', {
+        local RightSide = Library:Create('Frame', {
             BackgroundTransparency = 1;
             Position = UDim2.new(0.5, 4, 0, 8);
             Size = UDim2.new(0.5, -12, 0, 507);
