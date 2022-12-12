@@ -2200,7 +2200,7 @@ function Library:CreateWindow(WindowTitle)
         function Tab:AddGroupbox(Info)
             local Groupbox = {};
 
-            local BoxOuter = Library:Create('ScrollingFrame', {
+            local BoxOuter = Library:Create('Frame', {
                 BackgroundColor3 = Library.BackgroundColor;
                 BorderColor3 = Library.OutlineColor;
                 Size = UDim2.new(1, 0, 0, 507);
