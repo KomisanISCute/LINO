@@ -923,6 +923,9 @@ do
         Groupbox:AddBlank(5);
         Groupbox:Resize();
 
+        function Label:Updaate(text)
+            TextLabel.Text = text
+        end
         return Label;
     end;
 
@@ -2151,19 +2154,21 @@ function Library:CreateWindow(WindowTitle)
             Parent = TabContainer;
         });
 
-        local LeftSide = Library:Create('Frame', {
+        local LeftSide = Library:Create('ScrollingFrame', { --Frame
             BackgroundTransparency = 1;
             Position = UDim2.new(0, 8, 0, 8);
             Size = UDim2.new(0.5, -12, 0, 507);
             ZIndex = 2;
+            ScrollBarThickness = 0;
             Parent = TabFrame;
         });
 
-        local RightSide = Library:Create('Frame', {
+        local RightSide = Library:Create('ScrollingFrame', {
             BackgroundTransparency = 1;
             Position = UDim2.new(0.5, 4, 0, 8);
             Size = UDim2.new(0.5, -12, 0, 507);
             ZIndex = 2;
+            ScrollBarThickness = 0;
             Parent = TabFrame;
         });
 
@@ -2540,5 +2545,4 @@ function Library:CreateWindow(WindowTitle)
 
     return Window;
 end;
-
 return Library;
