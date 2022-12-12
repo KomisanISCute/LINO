@@ -2052,7 +2052,7 @@ function Library:CreateWindow(WindowTitle)
         BorderColor3 = 'OutlineColor';
     });
 
-    local MainSectionInner = Library:Create('ScrollingFrame', {
+    local MainSectionInner = Library:Create('Frame', {
         BackgroundColor3 = Library.BackgroundColor;
         BorderColor3 = Color3.new(0, 0, 0);
         BorderMode = Enum.BorderMode.Inset;
@@ -2200,7 +2200,7 @@ function Library:CreateWindow(WindowTitle)
         function Tab:AddGroupbox(Info)
             local Groupbox = {};
 
-            local BoxOuter = Library:Create('Frame', {
+            local BoxOuter = Library:Create('ScrollingFrame', {
                 BackgroundColor3 = Library.BackgroundColor;
                 BorderColor3 = Library.OutlineColor;
                 Size = UDim2.new(1, 0, 0, 507);
