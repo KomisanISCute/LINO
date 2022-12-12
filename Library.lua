@@ -2052,7 +2052,7 @@ function Library:CreateWindow(WindowTitle)
         BorderColor3 = 'OutlineColor';
     });
 
-    local MainSectionInner = Library:Create('Frame', {
+    local MainSectionInner = Library:Create('ScrollingFrame', {
         BackgroundColor3 = Library.BackgroundColor;
         BorderColor3 = Color3.new(0, 0, 0);
         BorderMode = Enum.BorderMode.Inset;
@@ -2081,7 +2081,7 @@ function Library:CreateWindow(WindowTitle)
         Parent = TabArea;
     });
 
-    local TabContainer = Library:Create('ScrollingFrame', {
+    local TabContainer = Library:Create('Frame', {
         BackgroundColor3 = Library.MainColor;
         BorderColor3 = Library.OutlineColor;
         Position = UDim2.new(0, 8, 0, 30);
